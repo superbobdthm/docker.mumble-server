@@ -7,7 +7,7 @@ This Repo will contain everything you need to build a docker container, or you c
 
 ## Running Docker container
 I recommend using either a named docker volume or a mount. below is an example with a named volume.
-    docker run -p 64738:64738 -p 64738:64738/udp -v mumbleServer:/mumble-server superbobdthm/mumble-server 
+    docker run -d -p 64738:64738 -p 64738:64738/udp -v mumbleServer:/mumble-server superbobdthm/mumble-server 
 
 ### Scripts
  * **entrypoint.sh** - This will handle initialization for first time users. It will generate a settings ini file which can be edit for custom configurations.
